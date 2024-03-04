@@ -1,7 +1,7 @@
 {
   "name": "admin-microfrontends",
   "version": "1.0.0",
-  "description": "The project about admin dashboard using microfrontends",
+  "description": "The project involves developing an administrative dashboard using microfrontends",
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
