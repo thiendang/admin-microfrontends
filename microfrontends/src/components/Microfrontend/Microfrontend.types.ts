@@ -122,3 +122,9 @@ export type MicrofrontendController = {
     hasZeroInstances: () => boolean;
   };
 };
+
+declare global {
+  interface Window {
+    $mfe: MicrofrontendWindowRecord<string, string>
+  }
+}
