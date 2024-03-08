@@ -8,4 +8,5 @@ packages:
   - mf-timeline
   - mf-verified
   - mf-tables
+  - mf-charts
   - api
