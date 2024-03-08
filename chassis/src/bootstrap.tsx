@@ -2,31 +2,32 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
-  const queryClientRef = React.useRef();
-  if (!queryClientRef.current) {
-    queryClientRef.current = new QueryClient();
-  }
+import { AppRouter } from "./components/index.ts";
+import './css/style.css';
+import './css/satoshi.css';
+import 'jsvectormap/dist/css/jsvectormap.css';
+
+const queryClient = new QueryClient();
+
+function App({
+  getManifestsUri = process.env.NODE_ENV === "production"
+    ? `${process.env.PUBLIC_URL || ""}/microfrontend-manifests.json`
+    : process.env.REACT_APP_API_ROOT_URL || "http://localhost:3333",
+} = {}) {
   return (
-    <QueryClientProvider client={queryClientRef.current}>
+    <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools />
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <MicrofrontendRoutes getMicrofrontendManifests={async () => []} />
-            }
-          />
-        </Routes>
-      </BrowserRouter>
+      <AppRouter
+        getMicrofrontendManifests={async () =>
+          await fetch(getManifestsUri).then((res) => res.json())
+        }
+      />
     </QueryClientProvider>
   );
 }
 
-const root = createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <App />

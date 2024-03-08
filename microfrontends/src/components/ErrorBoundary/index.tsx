@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { MicrofrontendErrorFallback } from './ErrorBoundary.types';
+import React, { Component } from "react";
+import { MicrofrontendErrorFallback } from "./ErrorBoundary.types";
 
 type ErrorBoundaryState<TError> = {
   error: TError | null;
@@ -40,7 +40,7 @@ export class ErrorBoundary<
       }
       const Fallback = this.props.Fallback;
       // Error path
-      return typeof Fallback === 'function' ? (
+      return typeof Fallback === "function" ? (
         <Fallback error={error} />
       ) : (
         Fallback

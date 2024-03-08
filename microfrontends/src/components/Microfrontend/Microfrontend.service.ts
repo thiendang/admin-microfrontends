@@ -1,8 +1,8 @@
-import { assert, sleep } from '../../common';
+import { assert, sleep } from "../../common";
 import {
   MicrofrontendManifest,
   MicrofrontendDefaultExport,
-} from './Microfrontend.types';
+} from "./Microfrontend.types";
 
 declare function __webpack_init_sharing__(scope: string): Promise<void>;
 declare const __webpack_share_scopes__: { default: any };
@@ -12,7 +12,7 @@ export function loadComponent<TScope extends string>(
   module: string
 ): () => Promise<MicrofrontendDefaultExport> {
   return async () => {
-    if (typeof window === 'undefined') {
+    if (typeof window === "undefined") {
       return;
     }
     const $window = window as {
@@ -22,17 +22,13 @@ export function loadComponent<TScope extends string>(
       };
     };
     // Initializes the share scope. This fills it with known provided modules from this build and all remotes
-    await __webpack_init_sharing__('default');
+    await __webpack_init_sharing__("default");
 
     const container = $window[scope];
     // Initialize the container, it may provide shared modules
-    try {
-      await container.init(__webpack_share_scopes__.default);
-    } catch (err) {
-      console.warn(err, { scope, module, container });
-    }
+    await container.init(__webpack_share_scopes__.default);
     const factory = await Promise.race([
-      $window[scope]?.get(module),
+      container?.get(module),
       sleep(300).then(() =>
         Promise.reject(
           new Error(
@@ -42,7 +38,7 @@ export function loadComponent<TScope extends string>(
       ),
     ]);
     const Module =
-      typeof factory === 'function'
+      typeof factory === "function"
         ? factory()
         : Promise.reject(
             new Error(
@@ -65,10 +61,10 @@ export const loadScript = (
       );
       return resolve(script);
     }
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.id = id;
     script.src = src;
-    script.type = 'text/javascript';
+    script.type = "text/javascript";
     script.async = true;
     script.onload = () => resolve(script);
     script.onerror = reject;
@@ -80,7 +76,7 @@ export const loadMicrofrontend = async ({
   entry,
   scope,
   module,
-}: Pick<MicrofrontendManifest, 'entry' | 'scope' | 'module'>) =>
+}: Pick<MicrofrontendManifest, "entry" | "scope" | "module">) =>
   loadScript(`mf-${scope.toLowerCase()}-entry`, entry)
     .then(() => loadComponent(scope, module)())
     .then((exported) => exported.default)

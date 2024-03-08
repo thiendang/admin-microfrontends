@@ -93,21 +93,23 @@ export const Microfrontend = ({
       );
     }
     return () => {
-      try {
-        if (typeof unmount === "function") {
-          console.log("unmount", scope);
-          unmount();
+      setTimeout(() => {
+        try {
+          if (typeof unmount === "function") {
+            console.log("unmount", scope);
+            unmount();
+          }
+        } catch (err) {
+          console.error(err);
+          setMFError(
+            makeError(
+              "UnmountError",
+              `Could not unmount Microfrontend: ${scope} (${module})`,
+              error
+            )
+          );
         }
-      } catch (err) {
-        console.error(err);
-        setMFError(
-          makeError(
-            "UnmountError",
-            `Could not unmount Microfrontend: ${scope} (${module})`,
-            error
-          )
-        );
-      }
+      });
     };
   }, [isMounted, isError, entry, module, retryCount]);
 
@@ -140,6 +142,10 @@ export const Microfrontend = ({
       {...{ "data-mf-scope": scope, "data-mf-module": module }}
     ></div>
   );
+};
+
+Microfrontend.defaultProps = {
+  loadMicrofrontend,
 };
 
 export * from "./Microfrontend.types";

@@ -1,1 +1,2 @@
-export * from "./MicrofrontendRoutes";
+export * from "./AppRouter.tsx";
+export * from "./Layout/index.tsx";

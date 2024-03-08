@@ -14,7 +14,7 @@ module.exports = function override(config, env) {
   config.entry = ["./src/index.ts"];
   config.plugins.push(
     new ModuleFederationPlugin({
-      name: "chassis",
+      name: pkg.name,
       filename: "remoteEntry.js",
       exposes: {
         "./index.js": "./src/bootstrap.tsx"
