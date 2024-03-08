@@ -67,10 +67,10 @@ const TableThree = () => {
                   <p
                     className={`inline-flex rounded-full bg-opacity-10 py-1 px-3 text-sm font-medium ${
                       packageItem.status === 'Paid'
-                        ? 'bg-success text-success'
+                        ? 'bg-lime-300 text-green-800'
                         : packageItem.status === 'Unpaid'
-                        ? 'bg-danger text-danger'
-                        : 'bg-warning text-warning'
+                        ? 'bg-red-300 text-red-800'
+                        : 'bg-amber-300 text-amber-800'
                     }`}
                   >
                     {packageItem.status}

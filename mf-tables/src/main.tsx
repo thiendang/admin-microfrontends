@@ -6,6 +6,7 @@ import { MicrofrontendContext, register, z } from "microfrontends";
 import TableOne from './components/TableOne.tsx'
 import TableTwo from './components/TableTwo.tsx'
 import TableThree from './components/TableThree.tsx'
+import TableFive from './components/TableFive.tsx'
 import pkg from "../package.json";
 
 const getHTMLElement = (ref: HTMLElement | string) =>
@@ -16,6 +17,7 @@ const Tables = () => (
     <TableOne />
     <TableTwo />
     <TableThree />
+    <TableFive />
   </div>
 );
 
