@@ -97,7 +97,7 @@ const TableTwo = () => {
             <p className="text-sm text-black dark:text-white">{product.sold}</p>
           </div>
           <div className="col-span-1 flex items-center">
-            <p className="text-sm text-green-600">${product.profit}</p>
+            <p className="text-sm text-green-400">${product.profit}</p>
           </div>
         </div>
       ))}

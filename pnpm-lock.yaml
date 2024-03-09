@@ -159,6 +159,43 @@ importers:
         specifier: ^3.4.1
         version: 3.4.1
 
+  mf-cards:
+    dependencies:
+      '@craco/craco':
+        specifier: ^7.1.0
+        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
+      eventemitter3:
+        specifier: ^5.0.1
+        version: 5.0.1
+      microfrontends:
+        specifier: '*'
+        version: link:../microfrontends
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-query:
+        specifier: ^3.39.3
+        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.15.0
+        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
+      react-scripts:
+        specifier: ^5.0.1
+        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+    devDependencies:
+      '@types/react-dom':
+        specifier: ^18.2.7
+        version: 18.2.7
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.1
+
   mf-charts:
     dependencies:
       '@craco/craco':
@@ -172,16 +209,16 @@ importers:
         version: 5.0.1
       loadable-components:
         specifier: ^2.2.3
-        version: 2.2.3(react@16.14.0)
+        version: 2.2.3(react@18.2.0)
       microfrontends:
         specifier: '*'
         version: link:../microfrontends
       react:
         specifier: ^18.2.0
-        version: 16.14.0
+        version: 18.2.0
       react-apexcharts:
         specifier: 1.4.1
-        version: 1.4.1(apexcharts@3.41.0)(react@16.14.0)
+        version: 1.4.1(apexcharts@3.41.0)(react@18.2.0)
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
@@ -193,7 +230,7 @@ importers:
         version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
       react-scripts:
         specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@16.14.0)(typescript@5.2.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -364,9 +401,6 @@ importers:
       react-scripts:
         specifier: ^5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      styled-jsx:
-        specifier: ^5.1.2
-        version: 5.1.2(@babel/core@7.22.11)(react@18.2.0)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -1948,7 +1982,7 @@ packages:
       cosmiconfig-typescript-loader: 1.0.9(@types/node@20.5.8)(cosmiconfig@7.1.0)(typescript@5.2.2)
       cross-spawn: 7.0.3
       lodash: 4.17.21
-      react-scripts: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@16.14.0)(typescript@5.2.2)
+      react-scripts: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
       semver: 7.5.4
       webpack-merge: 5.9.0
     transitivePeerDependencies:
@@ -4487,10 +4521,6 @@ packages:
     engines: {node: '>= 10.0'}
     dependencies:
       source-map: 0.6.1
-    dev: false
-
-  /client-only@0.0.1:
-    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
     dev: false
 
   /cliui@7.0.4:
@@ -8223,7 +8253,7 @@ packages:
     resolution: {integrity: sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  /loadable-components@2.2.3(react@16.14.0):
+  /loadable-components@2.2.3(react@18.2.0):
     resolution: {integrity: sha512-M5NYoClnlWxSbIMvKtyrtod00gf2rfBDitbTvdGjF1bGxt7nMZbCGP1N7g8CgWQWyTV7HtL86G3lunv+1GRvEg==}
     deprecated: Please use @loadable/component
     peerDependencies:
@@ -8231,7 +8261,7 @@ packages:
     dependencies:
       babel-plugin-syntax-dynamic-import: 6.18.0
       hoist-non-react-statics: 3.3.2
-      react: 16.14.0
+      react: 18.2.0
     dev: false
 
   /loader-runner@4.3.0:
@@ -9943,17 +9973,6 @@ packages:
       unpipe: 1.0.0
     dev: false
 
-  /react-apexcharts@1.4.1(apexcharts@3.41.0)(react@16.14.0):
-    resolution: {integrity: sha512-G14nVaD64Bnbgy8tYxkjuXEUp/7h30Q0U33xc3AwtGFijJB9nHqOt1a6eG0WBn055RgRg+NwqbKGtqPxy15d0Q==}
-    peerDependencies:
-      apexcharts: ^3.41.0
-      react: '>=0.13'
-    dependencies:
-      apexcharts: 3.41.0
-      prop-types: 15.8.1
-      react: 16.14.0
-    dev: false
-
   /react-apexcharts@1.4.1(apexcharts@3.41.0)(react@18.2.0):
     resolution: {integrity: sha512-G14nVaD64Bnbgy8tYxkjuXEUp/7h30Q0U33xc3AwtGFijJB9nHqOt1a6eG0WBn055RgRg+NwqbKGtqPxy15d0Q==}
     peerDependencies:
@@ -10092,103 +10111,6 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@16.14.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
-    peerDependencies:
-      eslint: '*'
-      react: '>= 16'
-      typescript: ^3.2.1 || ^4
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@babel/core': 7.22.11
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.11(react-refresh@0.11.0)(webpack-dev-server@4.15.1)(webpack@5.88.2)
-      '@svgr/webpack': 5.5.0
-      babel-jest: 27.5.1(@babel/core@7.22.11)
-      babel-loader: 8.3.0(@babel/core@7.22.11)(webpack@5.88.2)
-      babel-plugin-named-asset-import: 0.3.8(@babel/core@7.22.11)
-      babel-preset-react-app: 10.0.1
-      bfj: 7.0.2
-      browserslist: 4.23.0
-      camelcase: 6.3.0
-      case-sensitive-paths-webpack-plugin: 2.4.0
-      css-loader: 6.8.1(webpack@5.88.2)
-      css-minimizer-webpack-plugin: 3.4.1(esbuild@0.18.20)(webpack@5.88.2)
-      dotenv: 10.0.0
-      dotenv-expand: 5.1.0
-      eslint: 8.48.0
-      eslint-config-react-app: 7.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(eslint@8.48.0)(jest@27.5.1)(typescript@5.2.2)
-      eslint-webpack-plugin: 3.2.0(eslint@8.48.0)(webpack@5.88.2)
-      file-loader: 6.2.0(webpack@5.88.2)
-      fs-extra: 10.1.0
-      html-webpack-plugin: 5.5.3(webpack@5.88.2)
-      identity-obj-proxy: 3.0.0
-      jest: 27.5.1
-      jest-resolve: 27.5.1
-      jest-watch-typeahead: 1.1.0(jest@27.5.1)
-      mini-css-extract-plugin: 2.7.6(webpack@5.88.2)
-      postcss: 8.4.35
-      postcss-flexbugs-fixes: 5.0.2(postcss@8.4.35)
-      postcss-loader: 6.2.1(postcss@8.4.35)(webpack@5.88.2)
-      postcss-normalize: 10.0.1(browserslist@4.23.0)(postcss@8.4.35)
-      postcss-preset-env: 7.8.3(postcss@8.4.35)
-      prompts: 2.4.2
-      react: 16.14.0
-      react-app-polyfill: 3.0.0
-      react-dev-utils: 12.0.1(eslint@8.48.0)(typescript@5.2.2)(webpack@5.88.2)
-      react-refresh: 0.11.0
-      resolve: 1.22.4
-      resolve-url-loader: 4.0.0
-      sass-loader: 12.6.0(webpack@5.88.2)
-      semver: 7.5.4
-      source-map-loader: 3.0.2(webpack@5.88.2)
-      style-loader: 3.3.3(webpack@5.88.2)
-      tailwindcss: 3.4.1
-      terser-webpack-plugin: 5.3.9(esbuild@0.18.20)(webpack@5.88.2)
-      typescript: 5.2.2
-      webpack: 5.88.2(esbuild@0.18.20)
-      webpack-dev-server: 4.15.1(webpack@5.88.2)
-      webpack-manifest-plugin: 4.1.1(webpack@5.88.2)
-      workbox-webpack-plugin: 6.6.0(webpack@5.88.2)
-    optionalDependencies:
-      fsevents: 2.3.3
-    transitivePeerDependencies:
-      - '@babel/plugin-syntax-flow'
-      - '@babel/plugin-transform-react-jsx'
-      - '@parcel/css'
-      - '@swc/core'
-      - '@types/babel__core'
-      - '@types/webpack'
-      - bufferutil
-      - canvas
-      - clean-css
-      - csso
-      - debug
-      - esbuild
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
-      - fibers
-      - node-notifier
-      - node-sass
-      - rework
-      - rework-visit
-      - sass
-      - sass-embedded
-      - sockjs-client
-      - supports-color
-      - ts-node
-      - type-fest
-      - uglify-js
-      - utf-8-validate
-      - vue-template-compiler
-      - webpack-cli
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-    dev: false
-
   /react-scripts@5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2):
     resolution: {integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==}
     engines: {node: '>=14.0.0'}
@@ -10284,15 +10206,6 @@ packages:
       - webpack-cli
       - webpack-hot-middleware
       - webpack-plugin-serve
-    dev: false
-
-  /react@16.14.0:
-    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      prop-types: 15.8.1
     dev: false
 
   /react@18.2.0:
@@ -11194,24 +11107,6 @@ packages:
       webpack: ^5.0.0
     dependencies:
       webpack: 5.88.2(esbuild@0.18.20)
-    dev: false
-
-  /styled-jsx@5.1.2(@babel/core@7.22.11)(react@18.2.0):
-    resolution: {integrity: sha512-FI5r0a5ED2/+DSdG2ZRz3a4FtNQnKPLadauU5v76a9QsscwZrWggQKOmyxGGP5EWKbyY3bsuWAJYzyKaDAVAcw==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@babel/core': '*'
-      babel-plugin-macros: '*'
-      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      babel-plugin-macros:
-        optional: true
-    dependencies:
-      '@babel/core': 7.22.11
-      client-only: 0.0.1
-      react: 18.2.0
     dev: false
 
   /stylehacks@5.1.1(postcss@8.4.35):

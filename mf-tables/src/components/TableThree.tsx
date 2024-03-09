@@ -64,17 +64,17 @@ const TableThree = () => {
                   </p>
                 </td>
                 <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
-                  <p
-                    className={`inline-flex rounded-full bg-opacity-10 py-1 px-3 text-sm font-medium ${
+                  <span
+                    className={`dark:bg-gray-700 font-medium mr-2 px-2.5 py-0.5 rounded-md text-xs ${
                       packageItem.status === 'Paid'
-                        ? 'bg-lime-300 text-green-800'
+                        ? 'bg-green-100 text-green-800 border border-green-100 dark:border-green-500 dark:text-green-400'
                         : packageItem.status === 'Unpaid'
-                        ? 'bg-red-300 text-red-800'
-                        : 'bg-amber-300 text-amber-800'
+                        ? 'bg-red-100 text-red-800'
+                        : 'bg-orange-100 text-orange-800'
                     }`}
                   >
                     {packageItem.status}
-                  </p>
+                  </span>
                 </td>
                 <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
                   <div className="flex items-center space-x-3.5">

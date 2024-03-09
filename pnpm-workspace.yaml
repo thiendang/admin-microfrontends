@@ -9,4 +9,5 @@ packages:
   - mf-verified
   - mf-tables
   - mf-charts
+  - mf-cards
   - api
