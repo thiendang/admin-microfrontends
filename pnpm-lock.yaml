@@ -118,9 +118,9 @@ importers:
       eventemitter3:
         specifier: ^5.0.1
         version: 5.0.1
-      jsvectormap:
-        specifier: ^1.5.3
-        version: 1.5.3
+      flatpickr:
+        specifier: 4.6.13
+        version: 4.6.13
       microfrontends:
         specifier: '*'
         version: link:../microfrontends
@@ -6284,6 +6284,10 @@ packages:
       rimraf: 3.0.2
     dev: false
 
+  /flatpickr@4.6.13:
+    resolution: {integrity: sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==}
+    dev: false
+
   /flatted@3.2.7:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: false
@@ -8157,10 +8161,6 @@ packages:
   /jsonpointer@5.0.1:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /jsvectormap@1.5.3:
-    resolution: {integrity: sha512-HStTEhZEVr8t3t6juApO603nr1y54K/wjcdOvgGtvpE1etZ9Isg/sLdqh7OX4+RJ8srdP7WiBoTV/93aMqhLhw==}
     dev: false
 
   /jsx-ast-utils@3.3.5:

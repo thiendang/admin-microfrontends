@@ -3,10 +3,11 @@ import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
-import { AppRouter } from "./components/index.ts";
+import { AppRouter } from "./pages/AppRouter.tsx";
 import './css/style.css';
 import './css/satoshi.css';
-import 'jsvectormap/dist/css/jsvectormap.css';
+import './css/config.css';
+import 'flatpickr/dist/flatpickr.min.css';
 
 const queryClient = new QueryClient();
 
