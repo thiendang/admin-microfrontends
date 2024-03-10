@@ -2,8 +2,11 @@ import { config } from "dotenv";
 import { MicrofrontendManifest } from "microfrontends";
 
 import Main from "./main.tsx";
-import NavHome from "./nav-home.tsx";
-import NavPost from "./nav-post.tsx";
+import MFCardOne from "./card-one.tsx";
+import MFCardTwo from "./card-two.tsx";
+import MFCardThree from "./card-three.tsx";
+import MFCardFour from "./card-four.tsx";
+import MFCardFive from "./card-five.tsx";
 
 config();
 
@@ -16,19 +19,39 @@ const manifest = {
   },
   slots: {
     routes: [],
-    "nav:item": [
+    "card-one": [
       {
-        name: "Home",
-        module: NavHome.module,
-        props: NavHome.props,
-        priority: 0,
+        name: "MFCardOne",
+        module: MFCardOne.module,
+        props: MFCardOne.props,
       },
     ],
-    "nav:footer": [
+    "card-two": [
       {
-        name: "Post",
-        module: NavPost.module,
-        props: NavPost.props,
+        name: "MFCardTwo",
+        module: MFCardTwo.module,
+        props: MFCardTwo.props,
+      },
+    ],
+    "card-three": [
+      {
+        name: "MFCardThree",
+        module: MFCardThree.module,
+        props: MFCardThree.props,
+      },
+    ],
+    "card-four": [
+      {
+        name: "MFCardFour",
+        module: MFCardFour.module,
+        props: MFCardFour.props,
+      },
+    ],
+    "card-five": [
+      {
+        name: "MFCardFive",
+        module: MFCardFive.module,
+        props: MFCardFive.props,
       },
     ],
     "main:content": [

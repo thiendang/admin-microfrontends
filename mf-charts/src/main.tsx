@@ -7,11 +7,13 @@ import ChartOne from './components/ChartOne.tsx';
 import ChartThree from './components/ChartThree.tsx';
 import ChartTwo from './components/ChartTwo.tsx';
 import ChartFour from './components/ChartFour.tsx';
+import ChartFive from './components/ChartFive.tsx';
 import ChartSix from './components/ChartSix.tsx';
 import ChartSeven from './components/ChartSeven.tsx';
 import ChartEight from './components/ChartEight.tsx';
-import pkg from '../package.json';
 import ChartNine from './components/ChartNine.tsx';
+import ChartTen from './components/ChartTen.tsx';
+import pkg from '../package.json';
 
 const getHTMLElement = (ref: HTMLElement | string) =>
   ref instanceof HTMLElement ? ref : document.getElementById(ref);
@@ -36,10 +38,16 @@ const Charts = () => (
     <div className="col-span-12 xl:col-span-5">
       <ChartEight />
     </div>
-    <div className="col-span-12">
+    <div className="col-span-12 xl:col-span-8">
       <ChartFour />
     </div>
-    <div className="col-span-12">
+    <div className="col-span-12 xl:col-span-4">
+      <ChartFive />
+    </div>
+    <div className="col-span-12 xl:col-span-5">
+      <ChartTen />
+    </div>
+    <div className="col-span-12 xl:col-span-7">
       <ChartNine />
     </div>
   </div>

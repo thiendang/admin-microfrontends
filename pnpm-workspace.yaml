@@ -1,13 +1,7 @@
 packages:
+  - api
   - microfrontends
-  - chassis
-  - mf-communities
-  - mf-explore
-  - mf-messages
-  - mf-notifications
-  - mf-timeline
-  - mf-verified
+  - shell
   - mf-tables
   - mf-charts
   - mf-cards
-  - api

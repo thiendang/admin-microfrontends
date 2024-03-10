@@ -7,7 +7,7 @@
     "preinstall": "npx only-allow pnpm",
     "typings": "bash ../scripts/generate-package-typings.sh",
     "build": "craco build",
-    "copy:build": "cpx \"build/**/*\" ../chassis/build/mfs/charts",
+    "copy:build": "cpx \"build/**/*\" ../shell/build/mfs/charts",
     "copy:env": "cpx .env.sample .env",
     "start": "craco start",
     "test": "craco test",

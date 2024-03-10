@@ -18,8 +18,12 @@ module.exports = function override(config, env) {
       name: pkg.name,
       filename: "remoteEntry.js",
       exposes: {
-        "./nav-home": "./src/nav-home.tsx",
-        "./nav-post": "./src/nav-post.tsx",
+        "./table-one": "./src/table-one.tsx",
+        "./table-two": "./src/table-two.tsx",
+        "./table-three": "./src/table-three.tsx",
+        "./table-four": "./src/table-four.tsx",
+        "./table-five": "./src/table-five.tsx",
+        "./table-six": "./src/table-six.tsx",
         "./main": "./src/main.tsx"
       },
       shared: {

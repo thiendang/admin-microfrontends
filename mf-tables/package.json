@@ -8,7 +8,7 @@
     "typings": "bash ../scripts/generate-package-typings.sh",
     "build": "craco build",
     "build:css": "npx tailwindcss -o ./public/output.css --minify",
-    "copy:build": "cpx \"build/**/*\" ../chassis/build/mfs/tables",
+    "copy:build": "cpx \"build/**/*\" ../shell/build/mfs/tables",
     "copy:env": "cpx .env.sample .env",
     "start": "craco start",
     "test": "craco test",

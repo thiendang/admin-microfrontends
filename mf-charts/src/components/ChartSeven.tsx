@@ -157,10 +157,10 @@ const ChartSeven: React.FC = () => {
   }
 
   return (
-    <div className="sm:px-8 rounded-sm border border-stroke bg-white px-5 pb-5 pt-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="h-full sm:px-8 rounded-sm border border-stroke bg-white px-5 pb-5 pt-8 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="mb-6 flex flex-col gap-2 sm:!flex-row sm:!items-center sm:!justify-between">
         <div>
-          <h4 className="text-xl font-bold text-black dark:text-white">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
             Payments Overview
           </h4>
         </div>
@@ -217,13 +217,13 @@ const ChartSeven: React.FC = () => {
       <div className="flex text-center xsm:!flex-row">
         <div style={{width: "50%"}} className="xsm:!w-1/2 border-solid py-2 dark:border-strokedark border-r-1">
           <p className="font-medium">Received Amount</p>
-          <h4 className="mt-1 text-xl font-bold text-black dark:text-white">
+          <h4 className="mt-1 text-title-sm2 font-bold text-black dark:text-white">
             $45,070.00
           </h4>
         </div>
         <div style={{width: "50%"}} className="xsm:!w-1/2 py-2">
           <p className="font-medium">Due Amount</p>
-          <h4 className="mt-1 text-xl font-bold text-black dark:text-white">
+          <h4 className="mt-1 text-title-sm2 font-bold text-black dark:text-white">
             $32,400.00
           </h4>
         </div>

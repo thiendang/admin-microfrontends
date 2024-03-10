@@ -27,7 +27,7 @@ This project serves as a practical example of how microfrontends can be used to 
 
 ## Project Structure
 
-The [chassis](./chassis/README.md) project composes 6 web apps, [communities](./mf-communities/README.md), [explore](./mf-explore/README.md), [messages](./mf-messages/README.md), [notifications](./mf-notifications/README.md), [timeline (home)](./mf-timeline/README.md), [verified](./mf-verified/README.md) into a cohesive web experience.
+The [shell](./shell/README.md) project composes 6 web apps, [communities](./mf-communities/README.md), [explore](./mf-explore/README.md), [messages](./mf-messages/README.md), [notifications](./mf-notifications/README.md), [timeline (home)](./mf-timeline/README.md), [verified](./mf-verified/README.md) into a cohesive web experience.
 
 Each microfrontend is responsible for a specific part of the X clone.
 
@@ -64,7 +64,7 @@ The above actions form 3 concepts called `module`, `entry`, and `scope` respecti
 
 ### Dynamic Remote Resolution
 
-This project uses Webpack Module Federation's [Promise-based Dynamic Remotes](https://webpack.js.org/concepts/module-federation/#promise-based-dynamic-remotes), where instead of having to manually specify each remote in the chassis project, we can resolve the values for their `scope`, `module` and `entry` at runtime.
+This project uses Webpack Module Federation's [Promise-based Dynamic Remotes](https://webpack.js.org/concepts/module-federation/#promise-based-dynamic-remotes), where instead of having to manually specify each remote in the shell project, we can resolve the values for their `scope`, `module` and `entry` at runtime.
 
 When running locally, these values are obtained from the microfrontend manifests served by the [api project](./api/README.md) at http://localhost:3333.
 
@@ -137,7 +137,7 @@ Having such a simple interface instead of exporting say a React component direct
 
 One of the properties of the microfrontend-manifest.json I did not talk about is the `events`, which may expose a mapping of event names to a [JSON schema](https://json-schema.org/) object that describes its data.
 
-Using the Microfrontend Context, we can [pass an eventBus](./chassis/src/components/AppRouter.tsx#L77) to our microfrontends, which they can use to communicate across the various apps.
+Using the Microfrontend Context, we can [pass an eventBus](./shell/src/components/AppRouter.tsx#L77) to our microfrontends, which they can use to communicate across the various apps.
 
 ## Cool tricks with Microfrontends
 
@@ -192,7 +192,7 @@ I've been toying with the idea of passing a tanstack query client, as part of th
 A good example of this is the [aside-search app](./mf-explore/src/aside-search.tsx#L12-L29),
 
 - emitting a `search` event that contains `{ "query": "Blah" }`,
-- having the chassis receive the event data and log to the console.
+- having the shell receive the event data and log to the console.
 
 ### 3. Demonstrate route-level slots
 

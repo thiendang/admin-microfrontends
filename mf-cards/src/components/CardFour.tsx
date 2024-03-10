@@ -33,7 +33,7 @@ const CardFour = () => {
             <svg className="h-[4.375rem] w-[4.375rem] -rotate-90 transform">
               <circle
                 className="text-stroke dark:text-strokedark"
-                stroke-width="10"
+                strokeWidth="10"
                 stroke="currentColor"
                 fill="transparent"
                 r="30"
@@ -42,9 +42,9 @@ const CardFour = () => {
               ></circle>
               <circle
                 className="text-[#3c50e0]"
-                stroke-width="10"
-                stroke-dasharray="188.49555921538757"
-                stroke-dashoffset="75.39822368615502"
+                strokeWidth="10"
+                strokeDasharray="188.49555921538757"
+                strokeDashoffset="75.39822368615502"
                 stroke="currentColor"
                 fill="transparent"
                 r="30"
@@ -85,7 +85,7 @@ const CardFour = () => {
             <svg className="h-[4.375rem] w-[4.375rem] -rotate-90 transform">
               <circle
                 className="text-stroke dark:text-strokedark"
-                stroke-width="10"
+                strokeWidth="10"
                 stroke="currentColor"
                 fill="transparent"
                 r="30"
@@ -94,9 +94,9 @@ const CardFour = () => {
               ></circle>
               <circle
                 className="text-[#3c50e0]"
-                stroke-width="10"
-                stroke-dasharray="188.49555921538757"
-                stroke-dashoffset="131.9468914507713"
+                strokeWidth="10"
+                strokeDasharray="188.49555921538757"
+                strokeDashoffset="131.9468914507713"
                 stroke="currentColor"
                 fill="transparent"
                 r="30"
@@ -137,7 +137,7 @@ const CardFour = () => {
             <svg className="h-[4.375rem] w-[4.375rem] -rotate-90 transform">
               <circle
                 className="text-stroke dark:text-strokedark"
-                stroke-width="10"
+                strokeWidth="10"
                 stroke="currentColor"
                 fill="transparent"
                 r="30"
@@ -146,9 +146,9 @@ const CardFour = () => {
               ></circle>
               <circle
                 className="text-[#3c50e0]"
-                stroke-width="10"
-                stroke-dasharray="188.49555921538757"
-                stroke-dashoffset="56.548667764616255"
+                strokeWidth="10"
+                strokeDasharray="188.49555921538757"
+                strokeDashoffset="56.548667764616255"
                 stroke="currentColor"
                 fill="transparent"
                 r="30"

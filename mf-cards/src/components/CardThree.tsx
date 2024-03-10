@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 const CardThree = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 2xl:gap-8">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 2xl:gap-7.5">
       <div className="rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
         <svg
           width="34"

@@ -107,58 +107,6 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
 
-  chassis:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      apexcharts:
-        specifier: 3.41.0
-        version: 3.41.0
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      flatpickr:
-        specifier: 4.6.13
-        version: 4.6.13
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-apexcharts:
-        specifier: 1.4.1
-        version: 1.4.1(apexcharts@3.41.0)(react@18.2.0)
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-      autoprefixer:
-        specifier: ^10.4.18
-        version: 10.4.18(postcss@8.4.35)
-      postcss:
-        specifier: ^8.4.35
-        version: 8.4.35
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.1
-
   mf-cards:
     dependencies:
       '@craco/craco':
@@ -239,142 +187,6 @@ importers:
         specifier: ^18.2.7
         version: 18.2.7
 
-  mf-communities:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-
-  mf-explore:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-
-  mf-messages:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-
-  mf-notifications:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-
   mf-tables:
     dependencies:
       '@craco/craco':
@@ -412,74 +224,6 @@ importers:
         specifier: ^3.4.1
         version: 3.4.1
 
-  mf-timeline:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-
-  mf-verified:
-    dependencies:
-      '@craco/craco':
-        specifier: ^7.1.0
-        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
-      eventemitter3:
-        specifier: ^5.0.1
-        version: 5.0.1
-      microfrontends:
-        specifier: '*'
-        version: link:../microfrontends
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-query:
-        specifier: ^3.39.3
-        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
-      react-router-dom:
-        specifier: ^6.15.0
-        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
-      react-scripts:
-        specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-    devDependencies:
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-
   microfrontends:
     dependencies:
       classnames:
@@ -503,6 +247,61 @@ importers:
       zod-to-json-schema:
         specifier: ^3.21.4
         version: 3.21.4(zod@3.22.4)
+
+  shell:
+    dependencies:
+      '@craco/craco':
+        specifier: ^7.1.0
+        version: 7.1.0(@types/node@20.5.8)(postcss@8.4.35)(react-scripts@5.0.1)(typescript@5.2.2)
+      apexcharts:
+        specifier: 3.41.0
+        version: 3.41.0
+      eventemitter3:
+        specifier: ^5.0.1
+        version: 5.0.1
+      flatpickr:
+        specifier: 4.6.13
+        version: 4.6.13
+      jsvectormap:
+        specifier: ^1.5.3
+        version: 1.5.3
+      microfrontends:
+        specifier: '*'
+        version: link:../microfrontends
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-apexcharts:
+        specifier: 1.4.1
+        version: 1.4.1(apexcharts@3.41.0)(react@18.2.0)
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-query:
+        specifier: ^3.39.3
+        version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.15.0
+        version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
+      react-scripts:
+        specifier: ^5.0.1
+        version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(esbuild@0.18.20)(eslint@8.48.0)(react@18.2.0)(typescript@5.2.2)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+    devDependencies:
+      '@types/react-dom':
+        specifier: ^18.2.7
+        version: 18.2.7
+      autoprefixer:
+        specifier: ^10.4.18
+        version: 10.4.18(postcss@8.4.35)
+      postcss:
+        specifier: ^8.4.35
+        version: 8.4.35
+      tailwindcss:
+        specifier: ^3.4.1
+        version: 3.4.1
 
 packages:
 
@@ -8161,6 +7960,10 @@ packages:
   /jsonpointer@5.0.1:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /jsvectormap@1.5.3:
+    resolution: {integrity: sha512-HStTEhZEVr8t3t6juApO603nr1y54K/wjcdOvgGtvpE1etZ9Isg/sLdqh7OX4+RJ8srdP7WiBoTV/93aMqhLhw==}
     dev: false
 
   /jsx-ast-utils@3.3.5:

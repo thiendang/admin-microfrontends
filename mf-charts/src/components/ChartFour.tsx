@@ -140,11 +140,11 @@ const ChartFour: React.FC = () => {
   }
 
   return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
+    <div className="h-full col-span-12 rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
       <div>
-        <h3 className="text-xl font-semibold text-black dark:text-white">
+        <h4 className="text-title-sm2 font-bold text-black dark:text-white">
           Visitors Analytics
-        </h3>
+        </h4>
       </div>
 
       <div className="mb-2">

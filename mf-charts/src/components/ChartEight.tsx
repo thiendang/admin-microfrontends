@@ -65,10 +65,10 @@ const ChartEight: React.FC = () => {
   }
 
   return (
-    <div className="sm:px-8 rounded-sm border border-stroke bg-white px-5 pb-5 pt-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="h-full sm:px-8 rounded-sm border border-stroke bg-white px-5 pb-5 pt-8 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="mb-3 justify-between gap-4 sm:flex">
         <div>
-          <h4 className="text-xl font-bold text-black dark:text-white">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
             Used Devices
           </h4>
         </div>

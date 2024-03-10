@@ -7,6 +7,7 @@ import TableOne from './components/TableOne.tsx'
 import TableTwo from './components/TableTwo.tsx'
 import TableThree from './components/TableThree.tsx'
 import TableFive from './components/TableFive.tsx'
+import TableSix from './components/TableSix.tsx'
 import pkg from "../package.json";
 
 const getHTMLElement = (ref: HTMLElement | string) =>
@@ -18,6 +19,7 @@ const Tables = () => (
     <TableTwo />
     <TableThree />
     <TableFive />
+    <TableSix />
   </div>
 );
 

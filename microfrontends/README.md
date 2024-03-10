@@ -18,7 +18,7 @@ import { Microfrontend } from "microfrontends";
 />;
 ```
 
-## To load Microfrontends on Routes in a Chassis
+## To load Microfrontends on Routes in a Shell
 
 ```jsx
 import { MicrofrontendScreen } from "microfrontends";

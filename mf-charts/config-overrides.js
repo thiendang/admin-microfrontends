@@ -18,8 +18,16 @@ module.exports = function override(config, env) {
       name: pkg.name,
       filename: "remoteEntry.js",
       exposes: {
-        "./nav-verified": "./src/nav-verified.tsx",
-        "./aside-subscribe": "./src/aside-subscribe.tsx",
+        "./chart-one": "./src/chart-one.tsx",
+        "./chart-two": "./src/chart-two.tsx",
+        "./chart-three": "./src/chart-three.tsx",
+        "./chart-four": "./src/chart-four.tsx",
+        "./chart-five": "./src/chart-five.tsx",
+        "./chart-six": "./src/chart-six.tsx",
+        "./chart-seven": "./src/chart-seven.tsx",
+        "./chart-eight": "./src/chart-eight.tsx",
+        "./chart-nine": "./src/chart-nine.tsx",
+        "./chart-ten": "./src/chart-ten.tsx",
         "./main": "./src/main.tsx",
       },
       shared: {

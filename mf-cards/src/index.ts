@@ -1,3 +1,6 @@
 import("./main.tsx");
-import("./nav-post.tsx");
-import("./nav-home.tsx");
+import("./card-one.tsx");
+import("./card-two.tsx");
+import("./card-three.tsx");
+import("./card-four.tsx");
+import("./card-five.tsx");

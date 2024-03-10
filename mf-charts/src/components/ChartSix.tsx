@@ -141,14 +141,14 @@ const ChartSix: React.FC = () => {
   }
 
   return (
-    <div className="rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
+    <div className="h-full rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5">
       <div className="mb-6 flex items-start justify-between">
         <div>
-          <h4 className="text-xl font-bold text-black dark:text-white">
+          <h4 className="text-title-sm2 font-bold text-black dark:text-white">
             Campaign Visitors
           </h4>
-          <div className="mt-2 flex gap-2">
-            <h3 className="mb-2 text-3xl font-bold text-black dark:text-white">
+          <div className="mt-2.5 flex gap-2.5">
+            <h3 className="mb-1.5 text-title-lg font-bold text-black dark:text-white">
               $560.93
             </h3>
             <span className="flex items-center gap-1 text-sm font-medium text-meta-3">
@@ -159,7 +159,7 @@ const ChartSix: React.FC = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_554_43030)">
+                <g clipPath="url(#clip0_554_43030)">
                   <path
                     d="M13.4731 5.62415H9.95118C9.68868 5.62415 9.46993 5.8429 9.46993 6.1054C9.46993 6.3679 9.68868 6.58665 9.95118 6.58665H12.1168L9.3168 8.4679C9.20743 8.5554 9.0543 8.5554 8.92305 8.4679L6.03555 6.56477C5.57618 6.25852 5.00743 6.25852 4.54805 6.56477L1.1793 8.8179C0.960552 8.97102 0.894927 9.27727 1.04805 9.49602C1.13555 9.62727 1.28868 9.71477 1.46368 9.71477C1.55118 9.71477 1.66055 9.6929 1.72618 9.62727L5.1168 7.37415C5.22618 7.28665 5.3793 7.28665 5.51055 7.37415L8.39805 9.29915C8.85743 9.6054 9.42618 9.6054 9.88555 9.29915L12.9699 7.22102V9.64915C12.9699 9.91165 13.1887 10.1304 13.4512 10.1304C13.7137 10.1304 13.9324 9.91165 13.9324 9.64915V6.1054C13.9762 5.8429 13.7356 5.62415 13.4731 5.62415Z"
                     fill="#10B981"
@@ -207,8 +207,8 @@ const ChartSix: React.FC = () => {
               ></path>
             </svg>
           </button>
-          <div className="absolute right-0 top-full z-40 w-40 space-y-1 rounded-sm border border-stroke bg-white p-1.5 shadow-default dark:border-strokedark dark:bg-boxdark block">
-            <button className="flex w-full items-center gap-2 rounded-sm px-4 py-2 text-left text-sm hover:bg-gray dark:hover:bg-gray-4">
+          <div className="absolute right-0 top-full z-40 w-40 space-y-1 rounded-sm border border-stroke bg-white p-1.5 shadow-default dark:border-strokedark dark:bg-boxdark hidden">
+            <button className="flex w-full items-center gap-2 rounded-sm px-4 py-1.5 text-left text-sm hover:bg-gray dark:hover:bg-meta-4">
               <svg
                 className="fill-current"
                 width="16"
@@ -217,7 +217,7 @@ const ChartSix: React.FC = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_62_9787)">
+                <g clipPath="url(#clip0_62_9787)">
                   <path
                     d="M15.55 2.97499C15.55 2.77499 15.475 2.57499 15.325 2.42499C15.025 2.12499 14.725 1.82499 14.45 1.52499C14.175 1.24999 13.925 0.974987 13.65 0.724987C13.525 0.574987 13.375 0.474986 13.175 0.449986C12.95 0.424986 12.75 0.474986 12.575 0.624987L10.875 2.32499H2.02495C1.17495 2.32499 0.449951 3.02499 0.449951 3.89999V14C0.449951 14.85 1.14995 15.575 2.02495 15.575H12.15C13 15.575 13.725 14.875 13.725 14V5.12499L15.35 3.49999C15.475 3.34999 15.55 3.17499 15.55 2.97499ZM8.19995 8.99999C8.17495 9.02499 8.17495 9.02499 8.14995 9.02499L6.34995 9.62499L6.94995 7.82499C6.94995 7.79999 6.97495 7.79999 6.97495 7.77499L11.475 3.27499L12.725 4.49999L8.19995 8.99999ZM12.575 14C12.575 14.25 12.375 14.45 12.125 14.45H2.02495C1.77495 14.45 1.57495 14.25 1.57495 14V3.87499C1.57495 3.62499 1.77495 3.42499 2.02495 3.42499H9.72495L6.17495 6.99999C6.04995 7.12499 5.92495 7.29999 5.87495 7.49999L4.94995 10.3C4.87495 10.5 4.92495 10.675 5.02495 10.85C5.09995 10.95 5.24995 11.1 5.52495 11.1H5.62495L8.49995 10.15C8.67495 10.1 8.84995 9.97499 8.97495 9.84999L12.575 6.24999V14ZM13.5 3.72499L12.25 2.49999L13.025 1.72499C13.225 1.92499 14.05 2.74999 14.25 2.97499L13.5 3.72499Z"
                     fill=""
@@ -231,7 +231,7 @@ const ChartSix: React.FC = () => {
               </svg>
               Edit
             </button>
-            <button className="flex w-full items-center gap-2 rounded-sm px-4 py-2 text-left text-sm hover:bg-gray dark:hover:bg-gray-4">
+            <button className="flex w-full items-center gap-2 rounded-sm px-4 py-1.5 text-left text-sm hover:bg-gray dark:hover:bg-meta-4">
               <svg
                 className="fill-current"
                 width="16"
