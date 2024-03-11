@@ -1,9 +1,19 @@
 import React, { ReactNode } from 'react';
 
-const CardFour = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const CardFour: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="2xl:gap-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 xl:grid-cols-3">
-      <div className="xl:p-8 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6">
+    <div className="relative 2xl:gap-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 xl:grid-cols-3">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
+      <div className="outline outline-cyan-400 xl:p-8 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6">
         <div className="flex items-end justify-between">
           <div>
             <h3 className="mb-4 text-3xl font-bold text-black dark:text-white">
@@ -55,7 +65,7 @@ const CardFour = () => {
           </div>
         </div>
       </div>
-      <div className="xl:p-8 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6">
+      <div className="outline outline-cyan-400 xl:p-8 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6">
         <div className="flex items-end justify-between">
           <div>
             <h3 className="mb-4 text-3xl font-bold text-black dark:text-white">
@@ -107,7 +117,7 @@ const CardFour = () => {
           </div>
         </div>
       </div>
-      <div className="xl:p-8 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6">
+      <div className="outline outline-cyan-400 xl:p-8 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6">
         <div className="flex items-end justify-between">
           <div>
             <h3 className="mb-4 text-3xl font-bold text-black dark:text-white">

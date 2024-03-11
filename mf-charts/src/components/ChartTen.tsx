@@ -72,7 +72,12 @@ const options: ApexOptions = {
   },
 };
 
-const ChartTen: React.FC = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const ChartTen: React.FC<Props> = ({scope, module}: Props) => {
   const [state, setState] = useState<ChartTenState>({
     series: [
       {
@@ -103,7 +108,12 @@ const ChartTen: React.FC = () => {
   }
 
   return (
-    <div className="h-full rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="outline outline-orange-400 relative h-full rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="flex flex-col gap-2 border-b border-stroke px-6 py-5 dark:border-strokedark sm:flex-row sm:justify-between">
         <div>
           <h4 className="text-title-sm2 font-bold text-black dark:text-white">

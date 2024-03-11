@@ -1,8 +1,18 @@
 import React from 'react';
 
-const TableFour = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const TableFour: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+    <div className="outline outline-purple-400 relative rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="overflow-x-auto">
         <table className="w-full my-0 align-middle text-dark border-neutral-200">
           <thead className="align-bottom">

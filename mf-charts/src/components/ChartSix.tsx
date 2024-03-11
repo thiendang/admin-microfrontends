@@ -106,7 +106,12 @@ const options: ApexOptions = {
   },
 };
 
-const ChartSix: React.FC = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const ChartSix: React.FC<Props> = ({scope, module}: Props) => {
   const [state, setState] = useState<ChartSixState>({
     series: [
       {
@@ -141,7 +146,12 @@ const ChartSix: React.FC = () => {
   }
 
   return (
-    <div className="h-full rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5">
+    <div className="outline outline-orange-400 relative h-full rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="mb-6 flex items-start justify-between">
         <div>
           <h4 className="text-title-sm2 font-bold text-black dark:text-white">

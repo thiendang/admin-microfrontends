@@ -12,7 +12,7 @@ const getHTMLElement = (ref: HTMLElement | string) =>
 const MFChartEight = () => {
   const { navigate } = useContext(MicrofrontendContext);
   return (
-    <ChartEight />
+    <ChartEight scope="charts" module="./chart-eight" />
   );
 };
 

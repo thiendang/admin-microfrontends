@@ -12,7 +12,7 @@ const getHTMLElement = (ref: HTMLElement | string) =>
 const MFCardFive = () => {
   const { navigate } = useContext(MicrofrontendContext);
   return (
-    <CardFive />
+    <CardFive scope="cards" module="./card-five" />
   );
 };
 

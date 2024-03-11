@@ -1,9 +1,19 @@
 import React, { ReactNode } from 'react';
 
-const CardThree = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const CardThree: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 2xl:gap-7.5">
-      <div className="rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
+    <div className="relative grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 2xl:gap-7.5">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
+      <div className="outline outline-cyan-400 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
         <svg
           width="34"
           height="34"
@@ -37,7 +47,7 @@ const CardThree = () => {
           <span>than last Week</span>
         </p>
       </div>
-      <div className="rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
+      <div className="outline outline-cyan-400 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
         <svg
           width="34"
           height="34"
@@ -79,7 +89,7 @@ const CardThree = () => {
           <span>than last Week</span>
         </p>
       </div>
-      <div className="rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
+      <div className="outline outline-cyan-400 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-8">
         <svg
           width="34"
           height="34"

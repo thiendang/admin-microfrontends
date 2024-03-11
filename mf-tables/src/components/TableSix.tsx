@@ -1,8 +1,18 @@
 import React from 'react';
 
-const TableSix = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const TableSix: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="outline outline-purple-400 relative rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="p-4 md:p-6 xl:p-7.5">
         <div className="flex items-start justify-between">
           <div>

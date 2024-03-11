@@ -12,7 +12,7 @@ const getHTMLElement = (ref: HTMLElement | string) =>
 const MFTableThree = () => {
   const { navigate } = useContext(MicrofrontendContext);
   return (
-    <TableThree />
+    <TableThree scope="tables" module="./table-three" />
   );
 };
 

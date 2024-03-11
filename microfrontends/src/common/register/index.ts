@@ -187,13 +187,14 @@ export const register = <
     );
     const container = getHTMLElement(containerRef);
     const eventBus = props?.eventBus;
-    console.log(`[eventBus] emit - mf:mount`)
+    console.log(`%c [eventBus] emit mount - mf-scope: ${scope} - (mf-module: ${module})`, 'background: green; color: #ffffff')
     eventBus?.emit("mf:mount", {
       container,
       scope,
       module,
     });
     return () => {
+      console.log(`%c [eventBus] emit unmount - mf-scope: ${scope} - (mf-module: ${module})`, 'background: orange; color: #ffffff')
       eventBus?.emit("mf:unmount", {
         container,
         scope,

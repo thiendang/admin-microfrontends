@@ -41,9 +41,19 @@ const productData: Product[] = [
   },
 ];
 
-const TableTwo = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const TableTwo: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="outline outline-purple-400 relative rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="py-6 px-4 md:px-6 xl:px-8">
         <h4 className="text-xl font-semibold text-black dark:text-white">
           Top Products

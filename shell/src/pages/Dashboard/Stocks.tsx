@@ -824,6 +824,9 @@ const Stocks: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className="col-span-12">
+          <MicrofrontendSlot className="contents" name="table-four" />
+        </div>
       </div>
     </DefaultLayout>
   );

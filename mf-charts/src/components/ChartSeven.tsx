@@ -122,7 +122,12 @@ const options: ApexOptions = {
   },
 };
 
-const ChartSeven: React.FC = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const ChartSeven: React.FC<Props> = ({scope, module}: Props) => {
   const [state, setState] = useState<ChartSevenState>({
     series: [
       {
@@ -157,7 +162,12 @@ const ChartSeven: React.FC = () => {
   }
 
   return (
-    <div className="h-full sm:px-8 rounded-sm border border-stroke bg-white px-5 pb-5 pt-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="outline outline-orange-400 relative h-full sm:px-8 rounded-sm border border-stroke bg-white px-5 pb-5 pt-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="mb-6 flex flex-col gap-2 sm:!flex-row sm:!items-center sm:!justify-between">
         <div>
           <h4 className="text-title-sm2 font-bold text-black dark:text-white">

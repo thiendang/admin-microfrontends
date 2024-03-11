@@ -12,7 +12,7 @@ const getHTMLElement = (ref: HTMLElement | string) =>
 const MFChartSix = () => {
   const { navigate } = useContext(MicrofrontendContext);
   return (
-    <ChartSix />
+    <ChartSix scope="charts" module="./chart-six" />
   );
 };
 

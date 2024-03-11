@@ -1,8 +1,18 @@
 import React from 'react';
 
-const TableFive = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const TableFive: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="overflow-hidden rounded-[10px]">
+    <div className="outline outline-purple-400 relative overflow-hidden rounded-[10px]">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="max-w-full overflow-x-auto">
         <div className="min-w-[1170px]">
           <div className="grid grid-cols-12 bg-[#F9FAFB] px-5 py-4 dark:bg-meta-4 lg:px-7.5 2xl:px-11">

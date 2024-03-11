@@ -10,9 +10,9 @@ const getHTMLElement = (ref: HTMLElement | string) =>
   ref instanceof HTMLElement ? ref : document.getElementById(ref);
 
 const MFChartFour = () => {
-  const { navigate } = useContext(MicrofrontendContext);
+  const { navigate, manifests } = useContext(MicrofrontendContext);
   return (
-    <ChartFour />
+    <ChartFour scope="charts" module="./chart-four" />
   );
 };
 

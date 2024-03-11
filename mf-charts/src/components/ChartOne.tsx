@@ -123,7 +123,12 @@ interface ChartOneState {
   }[];
 }
 
-const ChartOne: React.FC = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const ChartOne: React.FC<Props> = ({scope, module}: Props) => {
   const [state, setState] = useState<ChartOneState>({
     series: [
       {
@@ -149,7 +154,12 @@ const ChartOne: React.FC = () => {
   }
 
   return (
-    <div className="h-full rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
+    <div className="outline outline-orange-400 relative h-full rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:!gap-5">
           <div className="flex min-w-48">

@@ -107,7 +107,12 @@ const options: ApexOptions = {
   },
 };
 
-const ChartFour: React.FC = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const ChartFour: React.FC<Props> = ({scope, module}: Props) => {
   const [state, setState] = useState<ChartFourState>({
     series: [
       {
@@ -140,7 +145,12 @@ const ChartFour: React.FC = () => {
   }
 
   return (
-    <div className="h-full col-span-12 rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
+    <div className="outline outline-orange-400 relative col-span-12 rounded-sm border border-stroke bg-white px-5 pt-8 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-8">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div>
         <h4 className="text-title-sm2 font-bold text-black dark:text-white">
           Visitors Analytics

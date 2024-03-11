@@ -18,7 +18,7 @@ const CardOneItem: React.FC<CardOneProps> = ({
   children,
 }) => {
   return (
-    <div className="rounded-sm border border-stroke bg-white py-6 px-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="outline outline-cyan-400 rounded-sm border border-stroke bg-white py-6 px-8 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-400">
         {children}
       </div>
@@ -72,9 +72,19 @@ const CardOneItem: React.FC<CardOneProps> = ({
   );
 };
 
-const CardOne = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const CardOne: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-8">
+    <div className="relative grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-8">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <CardOneItem title="Total views" total="$3.456K" rate="0.43%" levelUp>
         <svg
           className="fill-indigo-500 dark:fill-white"

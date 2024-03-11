@@ -97,7 +97,7 @@ export const Microfrontend = ({
       setTimeout(() => {
         try {
           if (typeof unmount === "function") {
-            console.log(`unmount: mf-scope: ${scope} - (mf-module: ${module})`);
+            console.log(`%c unmount: mf-scope: ${scope} - (mf-module: ${module})`, 'background: purple; color: #ffffff');
             unmount();
           }
         } catch (err) {

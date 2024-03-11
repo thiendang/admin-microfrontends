@@ -44,9 +44,19 @@ const cards: CardProps[] = [
   },
 ];
 
-const CardTwo = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const CardTwo: React.FC<Props> = ({scope, module}: Props) => {
   return (
-    <div className="rounded-sm border border-stroke bg-white p-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="relative outline outline-cyan-400 rounded-sm border border-stroke bg-white p-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="grid grid-cols-1 gap-5 sm:!grid-cols-2 xl:!grid-cols-4 xl:!gap-0">
         {cards.map((card, index) => (
           <div

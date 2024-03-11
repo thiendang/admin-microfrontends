@@ -72,7 +72,12 @@ const options: ApexOptions = {
   },
 };
 
-const ChartFive: React.FC = () => {
+type Props = {
+  scope?: string;
+  module?: string;
+};
+
+const ChartFive: React.FC<Props> = ({scope, module}: Props) => {
   const [state, setState] = useState<ChartFiveState>({
     series: [
       {
@@ -97,7 +102,12 @@ const ChartFive: React.FC = () => {
   }
 
   return (
-    <div className="h-full col-span-12 rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-5">
+    <div className="outline outline-orange-400 relative h-full col-span-12 rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-5">
+      {scope && module && (
+        <div className="absolute top-0 left-px text-xs font-semibold">
+          mf-scope: {scope} - (mf-module: {module})
+        </div>
+      )}
       <div className="flex justify-between border-b border-stroke py-5 px-6 dark:border-strokedark">
         <div>
           <h4 className="text-title-sm2 font-bold text-black dark:text-white">
