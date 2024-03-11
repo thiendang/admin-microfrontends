@@ -14,8 +14,6 @@
     "create:manifest": "tsx ./src/manifests.ts > ./public/microfrontend-manifest.json"
   },
   "keywords": [],
-  "author": "mykeels",
-  "license": "MIT",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -213,7 +213,7 @@ export const AppRouter = ({
 async function overrideManifests(
   manifests: MicrofrontendManifest[]
 ): Promise<MicrofrontendManifest[]> {
-  const allowedDomains = [/mykeels.github.io$/, /localhost:\d{4,5}$/];
+  const allowedDomains = [/thiendang.github.io$/, /localhost:\d{4,5}$/];
   const { override_manifest = [] } = getSearchParams<'override_manifest'>();
 
   return await Promise.all(
