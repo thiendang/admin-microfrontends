@@ -1,2 +1,7 @@
 packages:
+  - api
   - microfrontends
+  - shell
+  - mf-tables
+  - mf-charts
+  - mf-cards

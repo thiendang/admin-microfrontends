@@ -1,0 +1,11 @@
+import("./main.tsx");
+import("./chart-one.tsx");
+import("./chart-two.tsx");
+import("./chart-three.tsx");
+import("./chart-four.tsx");
+import("./chart-five.tsx");
+import("./chart-six.tsx");
+import("./chart-seven.tsx");
+import("./chart-eight.tsx");
+import("./chart-nine.tsx");
+import("./chart-ten.tsx");

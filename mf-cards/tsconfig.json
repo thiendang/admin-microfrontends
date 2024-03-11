@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "composite": false,
+    "resolveJsonModule": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "dist"
+  },
+  "include": ["src", "./package.json"],
+  "extends": "../tsconfig.base.json"
+}

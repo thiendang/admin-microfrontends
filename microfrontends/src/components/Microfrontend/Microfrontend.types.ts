@@ -5,7 +5,7 @@ export type MicrofrontendManifest = {
   events: {
     consumes: string[];
   } & {
-    [key: string]: MicrofrontendEvent;
+    [key: string]: object;
   };
   auth: MicrofrontendAuth;
   slots: {
@@ -13,8 +13,6 @@ export type MicrofrontendManifest = {
   } & {
     [name: string]: MicrofrontendCustomSlot[];
   };
-  createdOn: string;
-  manifestId: string;
 };
 
 export type MicrofrontendRouteOptions = {
@@ -38,12 +36,6 @@ type MicrofrontendCustomSlot =
   | string
   | (MicrofrontendCustomSlotOptions & { [key: string]: any });
 
-type MicrofrontendEventOptions = {
-  examples: (string | object)[];
-};
-
-type MicrofrontendEvent = MicrofrontendEventOptions & { [key: string]: any };
-
 type MicrofrontendAuthOptions = {
   required?: boolean;
   permissions?: MicrofrontendPermission[];
@@ -55,15 +47,13 @@ type MicrofrontendAuth = MicrofrontendAuthOptions & { [key: string]: any };
 
 export type MicrofrontendMountProps = {
   homedir: string;
+  url: string;
   navigate: (href: string) => any;
   manifests: MicrofrontendManifest[];
   fetch: (input: RequestInfo, init?: RequestInit) => Promise<Response>;
   eventBus?: MicrofrontendEventBus;
   layout: MicrofrontendLayout;
   user?: { permissions: MicrofrontendPermission[] };
-  rpcClient?: (
-    endpoint: string
-  ) => <TMessage>(message: TMessage) => Promise<any>;
   ErrorBoundary: (props: { children: any }) => JSX.Element;
 };
 
@@ -97,9 +87,10 @@ export type MicrofrontendWindowRecord<
   };
 };
 
-export type MountFn = (
+type Prettify<T> = { [K in keyof T]: T[K] } & {};
+export type MountFn<TProps extends {} = {}> = (
   containerRef: string | HTMLElement,
-  props: Partial<MicrofrontendMountProps>
+  props: Prettify<TProps & Partial<MicrofrontendMountProps>>
 ) => () => any;
 export type UnmountFn = (containerRef: string | HTMLElement) => any;
 
@@ -110,15 +101,26 @@ export type MicrofrontendDefaultExport = {
   };
 };
 
-export type MicrofrontendController = {
-  mount: MountFn;
+export type MicrofrontendController<
+  TScope extends string = string,
+  TModule extends string = string,
+  TMountProps extends {} = {}
+> = {
+  mount: MountFn<TMountProps>;
   unmount: UnmountFn;
   instances: number;
-  scope: string;
-  module: string;
+  scope: TScope;
+  module: TModule;
+  props: object;
   tracker?: {
     increment: () => void;
     decrement: () => void;
     hasZeroInstances: () => boolean;
   };
 };
+
+declare global {
+  interface Window {
+    $mfs: MicrofrontendWindowRecord<string, string>;
+  }
+}

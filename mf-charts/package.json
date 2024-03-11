@@ -1,0 +1,48 @@
+{
+  "name": "charts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "typings": "bash ../scripts/generate-package-typings.sh",
+    "build": "craco build",
+    "copy:build": "cpx \"build/**/*\" ../shell/build/mfs/charts",
+    "copy:env": "cpx .env.sample .env",
+    "start": "craco start",
+    "test": "craco test",
+    "create:manifest": "tsx ./src/manifests.ts > ./public/microfrontend-manifest.json"
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.15.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "apexcharts": "3.41.0",
+    "eventemitter3": "^5.0.1",
+    "loadable-components": "^2.2.3",
+    "microfrontends": "*",
+    "react-apexcharts": "1.4.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.2.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

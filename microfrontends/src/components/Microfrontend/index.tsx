@@ -39,6 +39,7 @@ export const Microfrontend = ({
     error,
     data: { mount } = {},
   } = useQuery(`microfrontend?entry=${entry}&module=${module}`, async () => {
+    console.log(`1.[Query]: microfrontend?entry=${entry}&module=${module}`)
     assert(loadMicrofrontend, "props.loadMicrofrontend must be a function");
     return loadMicrofrontend?.({ entry, scope, module });
   });
@@ -93,21 +94,23 @@ export const Microfrontend = ({
       );
     }
     return () => {
-      try {
-        if (typeof unmount === "function") {
-          console.log("unmount", scope);
-          unmount();
+      setTimeout(() => {
+        try {
+          if (typeof unmount === "function") {
+            console.log(`%c unmount: mf-scope: ${scope} - (mf-module: ${module})`, 'background: purple; color: #ffffff');
+            unmount();
+          }
+        } catch (err) {
+          console.error(err);
+          setMFError(
+            makeError(
+              "UnmountError",
+              `Could not unmount Microfrontend: ${scope} (${module})`,
+              error
+            )
+          );
         }
-      } catch (err) {
-        console.error(err);
-        setMFError(
-          makeError(
-            "UnmountError",
-            `Could not unmount Microfrontend: ${scope} (${module})`,
-            error
-          )
-        );
-      }
+      });
     };
   }, [isMounted, isError, entry, module, retryCount]);
 
@@ -140,6 +143,10 @@ export const Microfrontend = ({
       {...{ "data-mf-scope": scope, "data-mf-module": module }}
     ></div>
   );
+};
+
+Microfrontend.defaultProps = {
+  loadMicrofrontend,
 };
 
 export * from "./Microfrontend.types";
