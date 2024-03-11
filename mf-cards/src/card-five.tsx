@@ -39,6 +39,8 @@ export default register(pkg.name, "./card-five", {
     };
   },
   unmount: (containerRef) => {
+    console.log('unmount', 'card-five');
+    
     ReactDOM.unmountComponentAtNode(getHTMLElement(containerRef)!);
   },
   props: z.object({}),

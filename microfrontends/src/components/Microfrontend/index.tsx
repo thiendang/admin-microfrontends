@@ -39,6 +39,7 @@ export const Microfrontend = ({
     error,
     data: { mount } = {},
   } = useQuery(`microfrontend?entry=${entry}&module=${module}`, async () => {
+    console.log(`1.[Query]: microfrontend?entry=${entry}&module=${module}`)
     assert(loadMicrofrontend, "props.loadMicrofrontend must be a function");
     return loadMicrofrontend?.({ entry, scope, module });
   });
@@ -96,7 +97,7 @@ export const Microfrontend = ({
       setTimeout(() => {
         try {
           if (typeof unmount === "function") {
-            console.log("unmount", scope);
+            console.log(`unmount: mf-scope: ${scope} - (mf-module: ${module})`);
             unmount();
           }
         } catch (err) {

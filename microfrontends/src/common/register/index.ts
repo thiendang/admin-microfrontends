@@ -187,6 +187,7 @@ export const register = <
     );
     const container = getHTMLElement(containerRef);
     const eventBus = props?.eventBus;
+    console.log(`[eventBus] emit - mf:mount`)
     eventBus?.emit("mf:mount", {
       container,
       scope,
