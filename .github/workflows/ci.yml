@@ -39,5 +39,5 @@ jobs:
         working-directory: ${{env.working-directory}}
       - run: pnpm -r --parallel run copy:manifests
         working-directory: ${{env.working-directory}}
-      - run: ls -ah chassis/build
+      - run: ls -ah shell/build
         working-directory: ${{env.working-directory}}
