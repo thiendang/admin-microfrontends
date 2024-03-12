@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import DefaultLayout from '../../components/Layout/DefaultLayout.tsx';
 import { MicrofrontendSlot } from 'microfrontends';
 import MapOne from '../../components/Maps/MapOne.tsx';
@@ -137,20 +138,20 @@ const Marketing: React.FC = () => {
                       fill="#E37300"
                     ></path>
                   </svg>
-                  <a
+                  <NavLink
                     aria-current="page"
                     className="active"
-                    href="/dashboard/marketing"
+                    to="/dashboard/marketing"
                   >
                     <h4 className="font-medium text-black group-hover:text-primary dark:text-white dark:group-hover:text-primary">
                       Google Analytics
                     </h4>
-                  </a>
+                  </NavLink>
                 </div>
-                <a
+                <NavLink
                   aria-current="page"
                   className="inline-block hover:text-primary active"
-                  href="/dashboard/marketing"
+                  to="/dashboard/marketing"
                 >
                   <svg
                     className="fill-current"
@@ -172,7 +173,7 @@ const Marketing: React.FC = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </a>
+                </NavLink>
               </div>
               <div className="group flex items-center justify-between rounded-md p-4.5 hover:bg-gray-2 dark:hover:bg-graydark">
                 <div className="flex items-center gap-4">
@@ -195,20 +196,20 @@ const Marketing: React.FC = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <a
+                  <NavLink
                     aria-current="page"
                     className="active"
-                    href="/dashboard/marketing"
+                    to="/dashboard/marketing"
                   >
                     <h4 className="font-medium text-black group-hover:text-primary dark:text-white dark:group-hover:text-primary">
                       Facebook Ads
                     </h4>
-                  </a>
+                  </NavLink>
                 </div>
-                <a
+                <NavLink
                   aria-current="page"
                   className="inline-block  hover:text-primary active"
-                  href="/dashboard/marketing"
+                  to="/dashboard/marketing"
                 >
                   <svg
                     className="fill-current"
@@ -230,7 +231,7 @@ const Marketing: React.FC = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </a>
+                </NavLink>
               </div>
               <div className="group flex items-center justify-between rounded-md p-4.5 hover:bg-gray-2 dark:hover:bg-graydark">
                 <div className="flex items-center gap-4">
@@ -246,20 +247,20 @@ const Marketing: React.FC = () => {
                       fill="#0080F7"
                     ></path>
                   </svg>
-                  <a
+                  <NavLink
                     aria-current="page"
                     className="active"
-                    href="/dashboard/marketing"
+                    to="/dashboard/marketing"
                   >
                     <h4 className="font-medium text-black group-hover:text-primary dark:text-white dark:group-hover:text-primary">
                       Seranking
                     </h4>
-                  </a>
+                  </NavLink>
                 </div>
-                <a
+                <NavLink
                   aria-current="page"
                   className="inline-block hover:text-primary active"
-                  href="/dashboard/marketing"
+                  to="/dashboard/marketing"
                 >
                   <svg
                     className="fill-current"
@@ -281,7 +282,7 @@ const Marketing: React.FC = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </a>
+                </NavLink>
               </div>
               <div className="group flex items-center justify-between rounded-md p-4.5 hover:bg-gray-2 dark:hover:bg-graydark">
                 <div className="flex items-center gap-4">
@@ -354,20 +355,20 @@ const Marketing: React.FC = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <a
+                  <NavLink
                     aria-current="page"
                     className="active"
-                    href="/dashboard/marketing"
+                    to="/dashboard/marketing"
                   >
                     <h4 className="font-medium text-black group-hover:text-primary dark:text-white dark:group-hover:text-primary">
                       Instagram Ads
                     </h4>
-                  </a>
+                  </NavLink>
                 </div>
-                <a
+                <NavLink
                   aria-current="page"
                   className="inline-block hover:text-primary active"
-                  href="/dashboard/marketing"
+                  to="/dashboard/marketing"
                 >
                   <svg
                     className="fill-current"
@@ -389,7 +390,7 @@ const Marketing: React.FC = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
