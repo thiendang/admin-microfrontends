@@ -4,10 +4,9 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
 import { AppRouter } from "./pages/AppRouter.tsx";
-import './css/style.css';
-import './css/satoshi.css';
-import './css/config.css';
-import 'flatpickr/dist/flatpickr.min.css';
+// import './css/style.css';
+// import './css/satoshi.css';
+// import './css/config.css';
 
 const queryClient = new QueryClient();
 

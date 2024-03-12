@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import jsVectorMap from 'jsvectormap';
-import 'jsvectormap/dist/css/jsvectormap.css';
-import 'jsvectormap/dist/maps/world.js'
 
 const MapOne = () => {
   useEffect(() => {
