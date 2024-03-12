@@ -32,7 +32,7 @@ const CRM: React.FC = () => {
           <MicrofrontendSlot className="contents" name="chart-ten" />
         </div>
         <div className="col-span-12 xl:col-span-6">
-          <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+          <div className="h-full rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-4 py-4 dark:border-strokedark md:px-6 md:py-6 xl:px-7.5">
               <div className="flex items-start justify-between">
                 <div>
