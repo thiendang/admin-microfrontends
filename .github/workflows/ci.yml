@@ -29,15 +29,11 @@ jobs:
           working_directory: ${{env.working-directory}}
       - run: pnpm config set enable-pre-post-scripts true
         working-directory: ${{env.working-directory}}
-      - run: pnpm --filter microfrontends build
+      - run: pnpm run -r build
         working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run create:manifest
+      - run: pnpm run -r copy:build
         working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run build
-        working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run copy:build
-        working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run copy:manifests
+      - run: pnpm run -r copy:manifests
         working-directory: ${{env.working-directory}}
       - run: ls -ah shell/build
         working-directory: ${{env.working-directory}}

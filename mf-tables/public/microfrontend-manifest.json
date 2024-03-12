@@ -1,0 +1,149 @@
+{
+  "scope": "tables",
+  "module": "./unused-root-module.js",
+  "entry": "http://localhost:4002/remoteEntry.js",
+  "events": {
+    "consumes": []
+  },
+  "slots": {
+    "routes": [],
+    "table-one": [
+      {
+        "name": "MFTableOne",
+        "module": "./table-one",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "table-two": [
+      {
+        "name": "MFTableTwo",
+        "module": "./table-two",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "table-three": [
+      {
+        "name": "MFTableThree",
+        "module": "./table-three",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "table-four": [
+      {
+        "name": "MFTableFour",
+        "module": "./table-four",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "table-five": [
+      {
+        "name": "MFTableFive",
+        "module": "./table-five",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "table-six": [
+      {
+        "name": "MFTableSix",
+        "module": "./table-six",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "main:content": [
+      {
+        "name": "Main",
+        "module": "./main",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "string"
+                },
+                "b": {
+                  "type": "number"
+                },
+                "c": {
+                  "type": "object",
+                  "properties": {},
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "a",
+                "b",
+                "c"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "route": "/tables/*"
+      }
+    ]
+  },
+  "auth": {}
+}

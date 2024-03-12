@@ -1,0 +1,200 @@
+{
+  "scope": "charts",
+  "module": "./unused-root-module.js",
+  "entry": "http://localhost:4001/remoteEntry.js",
+  "events": {
+    "consumes": []
+  },
+  "slots": {
+    "routes": [],
+    "chart-one": [
+      {
+        "name": "MFChartOne",
+        "module": "./chart-one",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-two": [
+      {
+        "name": "MFChartTwo",
+        "module": "./chart-two",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-three": [
+      {
+        "name": "MFChartThree",
+        "module": "./chart-three",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-four": [
+      {
+        "name": "MFChartFour",
+        "module": "./chart-four",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-five": [
+      {
+        "name": "MFChartFive",
+        "module": "./chart-five",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-six": [
+      {
+        "name": "MFChartSix",
+        "module": "./chart-six",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-seven": [
+      {
+        "name": "MFChartSeven",
+        "module": "./chart-seven",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-eight": [
+      {
+        "name": "MFChartEight",
+        "module": "./chart-eight",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-nine": [
+      {
+        "name": "MFChartNine",
+        "module": "./chart-nine",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "chart-ten": [
+      {
+        "name": "MFChartTen",
+        "module": "./chart-ten",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        }
+      }
+    ],
+    "main:content": [
+      {
+        "name": "Main",
+        "module": "./main",
+        "props": {
+          "$ref": "#/definitions/props",
+          "definitions": {
+            "props": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": false
+            }
+          },
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "route": "/charts/*"
+      }
+    ]
+  },
+  "auth": {}
+}

@@ -29,19 +29,13 @@ jobs:
           working_directory: ${{env.working-directory}}
       - run: pnpm config set enable-pre-post-scripts true
         working-directory: ${{env.working-directory}}
-      - run: pnpm --filter microfrontends build
-        working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run create:manifest
-        working-directory: ${{env.working-directory}}
       - run: |
           echo "PUBLIC_URL=/admin-microfrontends" >> shell/.env
-          pnpm -r --parallel run build
+          pnpm run -r build
         working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run build
+      - run: pnpm run -r copy:build
         working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run copy:build
-        working-directory: ${{env.working-directory}}
-      - run: pnpm -r --parallel run copy:manifests
+      - run: pnpm run -r copy:manifests
         working-directory: ${{env.working-directory}}
       - run: ls -ah shell/build
         working-directory: ${{env.working-directory}}
