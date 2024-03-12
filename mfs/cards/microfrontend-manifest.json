@@ -1,7 +1,7 @@
 {
   "scope": "cards",
   "module": "./unused-root-module.js",
-  "entry": "http://localhost:undefined/remoteEntry.js",
+  "entry": "http://localhost:4003/remoteEntry.js",
   "events": {
     "consumes": []
   },
