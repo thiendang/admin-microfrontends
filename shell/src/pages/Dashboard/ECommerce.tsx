@@ -1,8 +1,8 @@
 import React from 'react';
 import DefaultLayout from '../../components/Layout/DefaultLayout.tsx';
 import { MicrofrontendSlot } from 'microfrontends';
-import MapOne from '../../components/Maps/MapOne.tsx';
 import ChatCard from '../../components/Chat/ChatCard.tsx';
+import MapTwo from '../../components/Maps/MapTwo.tsx';
 
 const ECommerce: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const ECommerce: React.FC = () => {
           <MicrofrontendSlot className="contents" name="chart-three" />
         </div>
         <div className="col-span-12 xl:col-span-8">
-          <MapOne />
+          <MapTwo />
         </div>
         <div className="col-span-12 xl:col-span-8">
           <MicrofrontendSlot className="contents" name="table-one" />
