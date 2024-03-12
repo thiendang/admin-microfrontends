@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/static/js/main.bab04a3f.js",
+    "cards.js": "/remoteEntry.js",
+    "static/js/src_main_tsx.c7f3e0e4.chunk.js": "/static/js/src_main_tsx.c7f3e0e4.chunk.js",
+    "static/js/src_card-one_tsx.46894877.chunk.js": "/static/js/src_card-one_tsx.46894877.chunk.js",
+    "static/js/src_card-two_tsx.25f2402a.chunk.js": "/static/js/src_card-two_tsx.25f2402a.chunk.js",
+    "static/js/src_card-three_tsx.904373f8.chunk.js": "/static/js/src_card-three_tsx.904373f8.chunk.js",
+    "static/js/src_card-four_tsx.c2451090.chunk.js": "/static/js/src_card-four_tsx.c2451090.chunk.js",
+    "static/js/src_card-five_tsx.6e9dd129.chunk.js": "/static/js/src_card-five_tsx.6e9dd129.chunk.js",
+    "static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.b68dbe5c.chunk.js": "/static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.b68dbe5c.chunk.js",
+    "static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.5e512a62.chunk.js": "/static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.5e512a62.chunk.js",
+    "static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.1aa173dc.chunk.js": "/static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.1aa173dc.chunk.js",
+    "static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.ed76af31.chunk.js": "/static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.ed76af31.chunk.js",
+    "static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c57c38.ccf5ada6.chunk.js": "/static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c57c38.ccf5ada6.chunk.js",
+    "static/js/microfrontends_dist_index_js-package_json.5570bbea.chunk.js": "/static/js/microfrontends_dist_index_js-package_json.5570bbea.chunk.js",
+    "index.html": "/index.html",
+    "main.bab04a3f.js.map": "/static/js/main.bab04a3f.js.map",
+    "remoteEntry.js.map": "/remoteEntry.js.map",
+    "src_main_tsx.c7f3e0e4.chunk.js.map": "/static/js/src_main_tsx.c7f3e0e4.chunk.js.map",
+    "src_card-one_tsx.46894877.chunk.js.map": "/static/js/src_card-one_tsx.46894877.chunk.js.map",
+    "src_card-two_tsx.25f2402a.chunk.js.map": "/static/js/src_card-two_tsx.25f2402a.chunk.js.map",
+    "src_card-three_tsx.904373f8.chunk.js.map": "/static/js/src_card-three_tsx.904373f8.chunk.js.map",
+    "src_card-four_tsx.c2451090.chunk.js.map": "/static/js/src_card-four_tsx.c2451090.chunk.js.map",
+    "src_card-five_tsx.6e9dd129.chunk.js.map": "/static/js/src_card-five_tsx.6e9dd129.chunk.js.map",
+    "node_modules_pnpm_react_18_2_0_node_modules_react_index_js.b68dbe5c.chunk.js.map": "/static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.b68dbe5c.chunk.js.map",
+    "vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.5e512a62.chunk.js.map": "/static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.5e512a62.chunk.js.map",
+    "vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.1aa173dc.chunk.js.map": "/static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.1aa173dc.chunk.js.map",
+    "vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.ed76af31.chunk.js.map": "/static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.ed76af31.chunk.js.map",
+    "vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c57c38.ccf5ada6.chunk.js.map": "/static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c57c38.ccf5ada6.chunk.js.map",
+    "microfrontends_dist_index_js-package_json.5570bbea.chunk.js.map": "/static/js/microfrontends_dist_index_js-package_json.5570bbea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bab04a3f.js"
+  ]
+}
