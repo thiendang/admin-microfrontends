@@ -49,13 +49,13 @@ module.exports = function override(config, env) {
       }
     })
   );
-  const shellScriptPlugin = new HookShellScriptPlugin({
-    beforeCompile: ['npm run create:manifest'],
-  });
-  shellScriptPlugin._onScriptError = () => {};
-  config.plugins.push(
-    shellScriptPlugin
-  );
+  // const shellScriptPlugin = new HookShellScriptPlugin({
+  //   beforeCompile: ['npm run create:manifest'],
+  // });
+  // shellScriptPlugin._onScriptError = () => {};
+  // config.plugins.push(
+  //   shellScriptPlugin
+  // );
 
   config.resolve = {
     fallback: {
