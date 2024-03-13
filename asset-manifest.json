@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.js": "/admin-microfrontends/static/js/main.896c2269.js",
+    "main.js": "/admin-microfrontends/static/js/main.ef19ad7f.js",
     "shell.js": "/admin-microfrontends/remoteEntry.js",
-    "static/js/src_bootstrap_tsx.c70a0c40.chunk.js": "/admin-microfrontends/static/js/src_bootstrap_tsx.c70a0c40.chunk.js",
-    "static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.85b1bfdd.chunk.js": "/admin-microfrontends/static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.85b1bfdd.chunk.js",
-    "static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.5ec8e62d.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.5ec8e62d.chunk.js",
-    "static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.6728ea6d.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.6728ea6d.chunk.js",
-    "static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.5bdf06a7.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.5bdf06a7.chunk.js",
-    "static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c99049.454d6125.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c99049.454d6125.chunk.js",
-    "index.html": "/admin-microfrontends/index.html"
+    "static/js/src_bootstrap_tsx.394534fd.chunk.js": "/admin-microfrontends/static/js/src_bootstrap_tsx.394534fd.chunk.js",
+    "static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.a86d6967.chunk.js": "/admin-microfrontends/static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.a86d6967.chunk.js",
+    "static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.ad992762.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.ad992762.chunk.js",
+    "static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.534871fb.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.534871fb.chunk.js",
+    "static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.d3499bcd.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.d3499bcd.chunk.js",
+    "static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c99049.f59af957.chunk.js": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c99049.f59af957.chunk.js",
+    "index.html": "/admin-microfrontends/index.html",
+    "main.ef19ad7f.js.map": "/admin-microfrontends/static/js/main.ef19ad7f.js.map",
+    "remoteEntry.js.map": "/admin-microfrontends/remoteEntry.js.map",
+    "src_bootstrap_tsx.394534fd.chunk.js.map": "/admin-microfrontends/static/js/src_bootstrap_tsx.394534fd.chunk.js.map",
+    "node_modules_pnpm_react_18_2_0_node_modules_react_index_js.a86d6967.chunk.js.map": "/admin-microfrontends/static/js/node_modules_pnpm_react_18_2_0_node_modules_react_index_js.a86d6967.chunk.js.map",
+    "vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.ad992762.chunk.js.map": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.ad992762.chunk.js.map",
+    "vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.534871fb.chunk.js.map": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-query_3_39_3_react-dom_18_2_0_react_18_2_0_node_modules_react-11ea29.534871fb.chunk.js.map",
+    "vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.d3499bcd.chunk.js.map": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_react-router-dom_6_15_0_react-dom_18_2_0_react_18_2_0_node_modules_-323b6a.d3499bcd.chunk.js.map",
+    "vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c99049.f59af957.chunk.js.map": "/admin-microfrontends/static/js/vendors-node_modules_pnpm_classnames_2_3_2_node_modules_classnames_dedupe_js-node_modules_pnp-c99049.f59af957.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.896c2269.js"
+    "static/js/main.ef19ad7f.js"
   ]
 }
