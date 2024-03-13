@@ -10,7 +10,7 @@ You need the [Microfrontend](./src/components/Microfrontend/index.ts) component 
 import { Microfrontend } from "microfrontends";
 
 <Microfrontend
-  entry="http://localhost:3002/remoteEntry.js"
+  entry="http://localhost:4002/remoteEntry.js"
   scope="ProjectScope"
   module="./src/bootstrap.js"
   Fallback={<div>Fallback</div>}

@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "typings": "bash ../scripts/generate-package-typings.sh",
-    "build": "GENERATE_SOURCEMAP=false craco build",
+    "build": "craco build",
     "build:css": "npx tailwindcss -o ./public/output.css --minify",
     "copy:env": "cpx .env.sample .env",
     "copy:manifests": "node ./build/copy-manifests.script.js",
